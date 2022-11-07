@@ -1,0 +1,102 @@
+:root {
+    --bg-color: #f5f3ee;
+    --board: #e7e0d4;
+    --lines: #a1aab7;
+
+    --player-1-color: #1A0B5D;
+    --player-1-hover: #483892;
+    --player-1-box: #6455AA;
+
+    --player-2-color: #00261a;
+    --player-2-hover: #2A8D6D;
+    --player-2-box: #46A485;
+
+    --player-3-color: #9b6262;
+    --player-3-hover: #9c4551;
+    --player-3-box: #ac6a6a;
+}
+
+body {
+    background-color: var(--bg-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    justify-content: center;
+    font-size: 1.2rem;
+}
+
+main {
+    width: 340px;
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    background-color: var(--board);
+    border: solid #456123 0;
+    border-radius: 5px;
+}
+
+button {
+    margin: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #539ebe;
+    color: rgb(246, 237, 237);
+    font-weight: bold;
+}
+
+button:hover {
+    color: rgb(61, 57, 57);
+}
+
+.result {
+    margin: 0.8rem 0;
+}
+
+.homepage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: var(--bg-color);
+    text-align: center;
+}
+
+.hor-line-row {
+    display: flex;
+}
+
+.box-row {
+    display: flex;
+}
+
+.hor-line {
+    width: 100px;
+    height: 10px;
+    margin-left: 10px;
+    background-color: var(--lines);
+}
+
+.line-p1:hover {
+    background-color: var(--player-1-hover);
+}
+
+.line-p2:hover {
+    background-color: var(--player-2-hover);
+}
+
+.line-p3:hover {
+    background-color: var(--player-3-hover);
+}
+
+.line-color {
+    width: 10px;
+    height: 100px;
+    background-color: var(--lines);
+}
